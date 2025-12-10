@@ -110,9 +110,12 @@ ehoiweiowegtowei
         }
         static void Main(string[] args)
         {
+            int start = int.Parse( Console.ReadLine());//int
+            float start2 = float.Parse( Console.ReadLine());
+            long start3 = long.Parse( Console.ReadLine());
             //Literals();
             //ConsoleMethods();
-            FormatString();
+            //FormatString();
             Task1();
             //Console.BackgroundColor = ConsoleColor.Cyan;
             Console.ForegroundColor = ConsoleColor.Yellow;
