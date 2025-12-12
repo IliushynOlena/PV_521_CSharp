@@ -327,7 +327,6 @@ namespace _02_Array
             }
              */
             #endregion
-
             #region ArrayMethods
 
             Console.OutputEncoding = Encoding.UTF8;
@@ -372,7 +371,6 @@ namespace _02_Array
             Console.WriteLine("Кількість вимірів масиву myArr3: " + myArr3.Rank);
 
             #endregion
-
             #region MethodsWithArray
 
             int[] myArray = { 1, 2, 3, 4, 5 };
@@ -429,7 +427,6 @@ namespace _02_Array
 
             return array;
         }
-
         static void PrintArr(string text, int[] arr)
         {
             Console.Write(text + ": ");
