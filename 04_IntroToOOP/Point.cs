@@ -2,6 +2,7 @@
 {
     partial class Point
     {
+        //Old code
         //set
         public void setX(int newX)
         {
