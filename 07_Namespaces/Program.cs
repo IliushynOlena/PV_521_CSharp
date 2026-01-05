@@ -1,4 +1,6 @@
 ﻿
+using System.Globalization;
+
 namespace A
 {
     class Incrementer
@@ -47,6 +49,32 @@ namespace _07_Namespaces
             Console.WriteLine(inkrementer.MyltyIncrement());
             B.Incrementer inkrementer2 = new B.Incrementer(5);
             Console.WriteLine(inkrementer2.MyltyIncrement());
+
+
+            string text = "qwer 12 qw 43.2 wq eqw 123 422 12.23 43.2";
+            string[] arr = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            List<string> stringList = new List<string>();
+            List<int> intList = new List<int>();
+            List<double> doubleList = new List<double>();
+
+            foreach (string item in arr)
+            {
+                if (int.TryParse(item, out int iVal))
+                {
+                    intList.Add(iVal);
+                }
+                else if (double.TryParse(item, NumberStyles.Any, CultureInfo.InvariantCulture, out double dVal))
+                {
+                    doubleList.Add(dVal);
+                }
+                else
+                {
+                    stringList.Add(item);
+                }
+            }
+            Console.WriteLine("Integers:" + string.Join(",", intList));
+            Console.WriteLine("Doubles: " + string.Join(" | ", doubleList));
+            Console.WriteLine("Strings:" + string.Join(",", stringList));
         }
     }
 }
