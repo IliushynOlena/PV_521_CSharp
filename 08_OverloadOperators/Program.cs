@@ -1,4 +1,5 @@
 ﻿
+
 namespace _08_OverloadOperators
 {
     class _3D_Point
@@ -35,12 +36,22 @@ namespace _08_OverloadOperators
             return obj is Point point &&
                    X == point.X &&
                    Y == point.Y;
+            
+           
         }
 
         public override int GetHashCode()
         {
             return HashCode.Combine(X, Y);
         }
+
+        //public override bool Equals(object? obj)//object? obj == Point obj
+        //{
+        //    //this
+        //    return this.X ==  ((Point)obj).X && this.Y == ((Point)obj).Y;
+        //}
+
+
 
         // public static return_type operator [symbol] (parameters)
         //{
@@ -175,6 +186,9 @@ namespace _08_OverloadOperators
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(  Console.ReadLine()!);
+            string str = null;
+            Console.WriteLine(str?.ToUpper());
             int a = 5;//int ---> int
             double b = 3.335;//double  --> double
 
