@@ -4,6 +4,20 @@ namespace _10_Inheritance
 {
     abstract class Person: Object
     {
+        //Інкапсуляція  -- ящик class Name{ private : }
+        //Наслідування - 
+        //Поліморфізм - virtual override
+        //Auto property 
+        public string Name { get; set; } = "Oleg";
+
+        //private string name;
+
+        //public string Name
+        //{
+        //    get { return name; }
+        //    set { name = value; }
+        //}
+
         //private public protected
         private string name;
         private readonly DateTime birthdate;
@@ -32,6 +46,10 @@ namespace _10_Inheritance
         }
         //virtual override
         public virtual void Print()
+        {
+            Console.WriteLine($"Name : {name}. Birthdate : {birthdate.ToShortDateString()}");
+        }
+        public virtual void Drive()
         {
             Console.WriteLine($"Name : {name}. Birthdate : {birthdate.ToShortDateString()}");
         }
@@ -135,6 +153,26 @@ namespace _10_Inheritance
                 new Programmer("Oleg", new DateTime(1995,5,7),45000),
                 new TeamLead()
             };
+            Console.WriteLine("*********************************");
+            Programmer pr = null;
+            // use cast type
+            pr = (Programmer) people[1];
+            Console.WriteLine(pr.CountLines);
+
+            //use as 
+            pr = (people[0] as Programmer)!;//true == address, false null
+            if( pr != null)
+                pr.DoWork();
+
+            //use is and as
+            if (people[1] is Programmer)
+            {
+                pr = (people[1] as Programmer)!;
+                pr.DoWork();
+            }
+
+
+
             Console.WriteLine("-----------------------------------");
             foreach (var person in people)
             {
