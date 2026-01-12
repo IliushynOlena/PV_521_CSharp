@@ -109,6 +109,8 @@
     {
         static void Main(string[] args)
         {
+            Director director1 = new Director();
+           
             int[] arr = new int[5];
            
             //Director director = new Director()
