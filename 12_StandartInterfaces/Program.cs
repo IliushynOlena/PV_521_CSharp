@@ -148,6 +148,12 @@ namespace _12_StandartInterfaces
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Number : " + 100 );
+            Console.WriteLine("Number : " + 100 + 100 );
+            Console.WriteLine("Number : " + 100 + 100 + 100 );
+            Console.WriteLine($"Number : {100}");
+            Console.WriteLine($"Number : {100+100}");
+            Console.WriteLine($"Number : {100+100+100}");
 
             Student student = new Student//student = 0x2d5d4df65sd4
             {

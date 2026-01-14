@@ -48,6 +48,7 @@
     {
         public List<IWorkable> ListOfWorkers { get; set; }
 
+      
         public void Control()
         {
             Console.WriteLine("I control work");
