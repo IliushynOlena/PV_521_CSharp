@@ -30,7 +30,7 @@
             return base.ToString() + $"\nPosition : {Position}. Salary : {Salary}";
         }
     }
-    interface IWorkable
+    interface IWorkable//interface == class 
     {
         bool IsWorking { get; }
         string DoWork();

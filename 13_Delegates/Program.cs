@@ -2,10 +2,10 @@
 {
     //public class NameDelegate : MulticastDelegate
     //{
-    //public int Method(int a, double v)
-    //{
+        //public int Method(int a, double v)
+        //{
 
-    //}
+        //}
 
     //}
     public delegate void NameDelegate();
