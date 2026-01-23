@@ -18,7 +18,8 @@ namespace _18_Collections
         static void Main(string[] args)
         {
             int[] arr = new int[5] {1,2,3,4,5};
-
+            SortedList sortedList = new SortedList();
+            //sortedList.Add()
             ArrayList arr1 = new ArrayList();
             Console.WriteLine(arr1.Capacity);
             Console.WriteLine(arr1.Count);

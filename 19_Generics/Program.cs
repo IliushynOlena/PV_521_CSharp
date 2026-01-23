@@ -7,9 +7,7 @@
     - struct
     - methods
     - Interfaces
-    - delegate
-
-     
+    - delegate     
      */
 
     //Generic Delegates
@@ -38,7 +36,7 @@
     //template<typename Type>
     class MyArray<Type> : IMyComparable<MyArray<Type>>, IIndexer<Type>
     {
-        private Type[] arr;
+        private Type[] arr;//Type = int --> private int[]arr
 
         public MyArray(int size = 10)
         {
@@ -81,6 +79,7 @@
     }
     class Abonent
     {
+        int[] marks;
         public Abonent(string name, string phone)
         {
             
@@ -154,8 +153,14 @@
         static void Main(string[] args)
         {
             List<int> list;
+            List<float> list2;
             Dictionary<string, string> dict;
-            Stack<int> s;
+
+            if (true)
+            {
+                Stack<int> s;
+            }
+           
             Queue<float> q;
             Multy<int, float, double>(5, 7);
 
