@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20_WorkWithFile", "20_WorkW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_WorhWithDirectory_Files", "21_WorhWithDirectory_Files\21_WorhWithDirectory_Files.csproj", "{50F13676-EF76-4DCC-8A0D-058D1BEE7ED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_DataAnnotationSerialize", "22_DataAnnotationSerialize\22_DataAnnotationSerialize.csproj", "{7746A089-EED2-4F9C-AE38-BE3B10A455ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_DataAnnotations", "22_DataAnnotations\22_DataAnnotations.csproj", "{B79F2FD7-EA1E-4BE9-87A3-BD4CA503B1BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{50F13676-EF76-4DCC-8A0D-058D1BEE7ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F13676-EF76-4DCC-8A0D-058D1BEE7ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F13676-EF76-4DCC-8A0D-058D1BEE7ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7746A089-EED2-4F9C-AE38-BE3B10A455ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7746A089-EED2-4F9C-AE38-BE3B10A455ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7746A089-EED2-4F9C-AE38-BE3B10A455ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7746A089-EED2-4F9C-AE38-BE3B10A455ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79F2FD7-EA1E-4BE9-87A3-BD4CA503B1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79F2FD7-EA1E-4BE9-87A3-BD4CA503B1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79F2FD7-EA1E-4BE9-87A3-BD4CA503B1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79F2FD7-EA1E-4BE9-87A3-BD4CA503B1BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

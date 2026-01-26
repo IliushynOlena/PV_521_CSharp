@@ -1,12 +1,15 @@
-﻿using System.Text;
+﻿
+//#include<iostream>
+using System.Text;
+using static System.Math;
 
 namespace _20_WorkWithFile
 {
-
     internal class Program
     {
         static void WriteFile(string path)
         {
+
             //ex --- 1 ----
             // FileStream fs = new FileStream(path, FileMode.Open,
             //     FileAccess.Write | FileAccess.Read, FileShare.Write);
@@ -42,6 +45,18 @@ namespace _20_WorkWithFile
             //    fs.Dispose();
             //}
 
+            //File.Create();
+            //File.Close()
+
+            //    File.Open()
+            //      File.Close()
+            using (StreamWriter sw = new StreamWriter(path))
+            {
+                //wrire read work 
+
+
+            }//sw.Dispose(File.close());
+
             // ex   ----- 4-------
             using (FileStream fs = new FileStream(path, FileMode.Create,
               FileAccess.Write , FileShare.None))
@@ -58,9 +73,11 @@ namespace _20_WorkWithFile
         {
             using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read))
             {
+                
                 byte[]readText = new byte[fs.Length];
                 fs?.Read(readText, 0, readText.Length);
                 return Encoding.Default.GetString(readText);
+                double v = Round(2.33, 2);
             }
         }
 
@@ -78,6 +95,7 @@ namespace _20_WorkWithFile
         {
             using (StreamReader sr = new StreamReader(path + @"\textString.txt"))
             {
+               
                 //Console.WriteLine(sr.Read()); ;//read one symbol
 
                 //char[] buffer = new char[10];
