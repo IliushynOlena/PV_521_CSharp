@@ -71,7 +71,7 @@ namespace _23_RegularExpresion
             //}
 
 
-            #region Example 3
+            #region Example 4
             string pattern = @"";
 
             //pattern = @"\d+";
@@ -88,11 +88,51 @@ namespace _23_RegularExpresion
                     $" String \"{pattern}\"  NOT mached");
 
             }
+            #endregion
+            #region Exapmle 5
+            //string value = "4 - 5 AND 5 y 579";
+            //Match match = Regex.Match(value, @"\d");
+            string value = "113 Axx-1xxy \n Axyx-2xyyxyx ";
+            Match match = Regex.Match(value, @"A.*y");
+
+            if(match.Success)
+            {
+                Console.WriteLine("Value : " + match.Value);
+                Console.WriteLine("Lenght : " + match.Length);
+                Console.WriteLine("Index : " + match.Index);
+
+            }
+            match = match.NextMatch();
+            if (match.Success)
+            {
+                Console.WriteLine("Value : " + match.Value);
+                Console.WriteLine("Lenght : " + match.Length);
+                Console.WriteLine("Index : " + match.Index);
+            }
 
 
             #endregion
 
+            #region Example 6
+            string message = "saidsaid  said shed shed see said spear spread super";
 
+            MatchCollection collection =  Regex.Matches(message, @"s\w+d");
+            Console.WriteLine("--------------------------------------------");
+            foreach (Match item in collection)
+            {
+                Console.WriteLine("Value : " + item.Value);
+                Console.WriteLine("Lenght : " + item.Length);
+                Console.WriteLine("Index : " + item.Index);
+                Console.WriteLine();
+            }
+            #endregion
+
+            #region Example 7
+            string mess = "Don*t replace Dot Net replaced Net Net Don Net dots";
+            string output = Regex.Replace(mess, "N.t", "NET");
+            Console.WriteLine(mess);
+            Console.WriteLine(output);
+            #endregion
 
 
 

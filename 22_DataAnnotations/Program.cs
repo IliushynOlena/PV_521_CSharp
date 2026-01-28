@@ -31,6 +31,7 @@ namespace _22_DataAnnotations
         public string ConfirmPassword { get; set; }
 
         [Required]
+        [RegularExpression(@"\+380\d{2}\-\d{3}\-\d{2}\-\d{2}|\+38\(0\d{2}\)\d{3}\-\d{2}\-\d{2}|\+380[0-9]{9}")]
 
         public string Phone { get; set; }
 
