@@ -4,11 +4,13 @@ namespace _22_DataAnnotations
 {
     class User
     {
+    
         [Required(ErrorMessage ="Id not found")]//not be empty
         public int Id { get; set; }
 
+
         [Required(ErrorMessage ="Name not set")]
-        [StringLength(50, MinimumLength = 3, ErrorMessage ="Illelag length")]
+        [StringLength(50, MinimumLength = 3, ErrorMessage ="Illegal length")]
         public string Name { get; set; }//"              "
 
         [Required(ErrorMessage = "Age not set")]
@@ -29,6 +31,7 @@ namespace _22_DataAnnotations
         public string ConfirmPassword { get; set; }
 
         [Required]
+
         public string Phone { get; set; }
 
     }
@@ -36,6 +39,11 @@ namespace _22_DataAnnotations
     {
         static void Main(string[] args)
         {
+            Dictionary<int, User> users = new Dictionary<int, User>();
+            //Menu 
+            //1 * Add new User
+            //2 Selialize
+            //3 Deserialize
             //DataAnnotations == Attribute 
             User user = new User();
             bool isValid = true;
@@ -85,6 +93,8 @@ namespace _22_DataAnnotations
 
 
             } while (!isValid);
+
+            //Add to dictionary 
 
             Console.WriteLine("Model is valid");
         }

@@ -24,6 +24,7 @@ namespace _22_DataAnnotationSerialize
 
     [Coder]
     [Obsolete, Serializable]
+
     class Employee
     {
         public int Id { get; set; }
@@ -40,7 +41,7 @@ namespace _22_DataAnnotationSerialize
         }
     }
 
-   // [Serializable]
+    //[Serializable]
     public class Passport
     {
         public int Number { get; set; }
@@ -102,12 +103,12 @@ namespace _22_DataAnnotationSerialize
             //}
             //Console.WriteLine(pr);
             //JSON
-            //XML 
-            //Person person = new Person(5464654)
-            //{
-            //    Name = "Jack",
-            //    Age = 15
-            //};
+            Person person = new Person(5464654)
+            {
+                Name = "Jack",
+                Age = 15
+            };
+
             List<Person> persons = new List<Person>()
             {
               new Person(123654){ Name="Jack", Age = 15},
@@ -128,7 +129,7 @@ namespace _22_DataAnnotationSerialize
             {
                 Console.WriteLine(item);
             }
-         
+
             //Person person = new Person(5464654)
             //{
             //    Name = "Jack",
