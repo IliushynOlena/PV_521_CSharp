@@ -176,15 +176,18 @@
             }
             //Multiple Interfaces
             Administrator admin = new Administrator();
+            
 
             IWorkable worker = admin;
             worker.DoWork();
             Console.WriteLine(worker.IsWorking);
+           
 
 
             IManager manager = admin;
             manager.Organize();
             manager.Control();
+           
         }
     }
 }

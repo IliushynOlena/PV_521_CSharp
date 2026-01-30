@@ -11,11 +11,13 @@ namespace _22_DataAnnotations
 
         [Required(ErrorMessage ="Name not set")]
         [StringLength(50, MinimumLength = 3, ErrorMessage ="Illegal length")]
+        [RegularExpression("[A-Za-z]")]
+        ///dfdfd5dg5d4g5dfg5df4g
         public string Name { get; set; }//"              "
 
         [Required(ErrorMessage = "Age not set")]
         [Range(1,100, ErrorMessage ="Error age")]
-        public int Age { get; set; }
+        public int Age { get; set; }//value = 0
 
         [EmailAddress]
         public string Email { get; set; }
