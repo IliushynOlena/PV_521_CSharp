@@ -122,6 +122,8 @@
             //User { Name, LOgin, Email}
             //Method
             //query2 = arrayInt.Where(i=> i%2 == 0).OrderBy(i=> i);
+            int[] s;
+            
             query2 = arrayInt.Where(i=> i%2 == 0).OrderByDescending(i=> i);
             Console.WriteLine("\n------------ Array --------------");
             foreach (var item in query2)
@@ -152,7 +154,8 @@
 
             //method
             query3 = array3.Where(i => i > 10).GroupBy(i => i % 10).OrderBy(i=>i.Key);
-            foreach (IGrouping<int, int> item in query3)
+            //foreach (IGrouping<int, int> item in query3)
+            foreach (var item in query3)
             {
                 Console.Write($"Key : {item.Key}. Value : ");
                 foreach (var el in item)
